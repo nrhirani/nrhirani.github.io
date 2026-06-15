@@ -1,17 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-// When building for GitHub Pages, the site is served from a sub-path
-// (https://<user>.github.io/<repo>), so we need basePath/assetPrefix.
-// Locally (npm run dev / npm run build without this flag) the site still
-// serves from the root.
-const isGithubPages = process.env.GITHUB_PAGES === "true";
-const repoName = "personal-website";
-
+// Served at the root of a GitHub user/org page (https://nrhirani.github.io/),
+// from a repo literally named "nrhirani.github.io" — no basePath needed.
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: isGithubPages ? `/${repoName}` : "",
-  assetPrefix: isGithubPages ? `/${repoName}/` : "",
   images: {
     unoptimized: true,
   },

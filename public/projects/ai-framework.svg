@@ -1,0 +1,30 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1424"/>
+      <stop offset="1" stop-color="#0d0b14"/>
+    </linearGradient>
+    <linearGradient id="layer1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg3)"/>
+  <g>
+    <rect x="60" y="60" width="280" height="40" rx="6" fill="url(#layer1)" opacity="0.9"/>
+    <rect x="60" y="112" width="280" height="40" rx="6" fill="#22202c"/>
+    <rect x="60" y="164" width="280" height="40" rx="6" fill="#22202c"/>
+    <rect x="60" y="216" width="280" height="40" rx="6" fill="#1c1a26" stroke="#3a3645" stroke-width="1"/>
+    <text x="78" y="85" fill="#0d0b14" font-family="monospace" font-size="13" font-weight="700" letter-spacing="2">ORCHESTRATION LAYER</text>
+    <text x="78" y="137" fill="#d4d4d8" font-family="monospace" font-size="13" letter-spacing="2">EVALUATION &amp; TESTING</text>
+    <text x="78" y="189" fill="#d4d4d8" font-family="monospace" font-size="13" letter-spacing="2">OPTIMIZATION ENGINE</text>
+    <text x="78" y="241" fill="#9ca3af" font-family="monospace" font-size="13" letter-spacing="2">MODEL / LLM PROVIDERS</text>
+  </g>
+  <g stroke="#ec4899" stroke-width="2" opacity="0.6">
+    <line x1="340" y1="80" x2="364" y2="80"/>
+    <line x1="340" y1="132" x2="364" y2="132"/>
+    <line x1="340" y1="184" x2="364" y2="184"/>
+    <line x1="364" y1="80" x2="364" y2="184"/>
+  </g>
+  <text x="32" y="270" fill="#6b7280" font-family="monospace" font-size="12" letter-spacing="2">AI ENGINEERING FRAMEWORK</text>
+</svg>

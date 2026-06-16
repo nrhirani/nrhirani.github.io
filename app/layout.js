@@ -16,7 +16,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Nishit Hirani — VP Engineering | AI Systems & Leadership",
+  title: "Nishit Hirani — AI Systems & Leadership",
   description:
     "AI engineer and engineering leader focused on building intelligent systems from design to production. LLM applications, system architecture, and high-performing engineering teams.",
   icons: {
@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${display.variable} ${mono.variable}`}>
-      <body className="bg-bg text-ink font-mono antialiased">{children}</body>
+      <body className="bg-bg text-ink font-mono antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );
 }

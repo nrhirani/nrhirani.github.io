@@ -21,7 +21,7 @@ module.exports = {
         ink: {
           DEFAULT: "#f5f5f7",
           muted: "#9ca3af",
-          dim: "#6b7280",
+          dim: "#828290",
         },
       },
       fontFamily: {

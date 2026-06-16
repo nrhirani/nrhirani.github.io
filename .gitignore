@@ -17,3 +17,10 @@ build*.log
 
 # Local env files
 .env*.local
+
+# Jest
+/coverage/
+
+# Playwright
+/playwright-report/
+/test-results/

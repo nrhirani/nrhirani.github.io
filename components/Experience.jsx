@@ -21,6 +21,7 @@ export default function Experience() {
               <div key={`${job.company}-${job.period}`} className="rounded-lg overflow-hidden">
                 <button
                   onClick={() => setOpenIndex(isOpen ? -1 : i)}
+                  aria-expanded={isOpen}
                   className={`w-full flex items-center justify-between gap-4 px-6 py-4 text-left transition-colors ${
                     isOpen ? "bg-accent-gradient" : "bg-bg-panel hover:bg-bg-card"
                   }`}

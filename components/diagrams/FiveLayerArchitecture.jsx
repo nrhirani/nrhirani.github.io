@@ -8,7 +8,7 @@ export default function FiveLayerArchitecture() {
 
   return (
     <svg
-      viewBox="0 0 700 320"
+      viewBox="0 0 700 332"
       className="w-full h-auto"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
@@ -20,15 +20,15 @@ export default function FiveLayerArchitecture() {
         </marker>
       </defs>
 
-      {/* Side panel: Evaluation Layer */}
-      <rect x="15" y="10" width="150" height="300" rx="10" fill="none" stroke="#7c3aed" strokeOpacity="0.4" strokeDasharray="5 5" />
-      <text x="90" y="34" textAnchor="middle" fill="#7c3aed" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
+      {/* Side panel: Evaluation Layer — content vertically centered in the panel */}
+      <rect x="15" y="10" width="150" height="312" rx="10" fill="none" stroke="#7c3aed" strokeOpacity="0.4" strokeDasharray="5 5" />
+      <text x="90" y="87" textAnchor="middle" fill="#7c3aed" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
         EVALUATION
       </text>
-      <text x="90" y="50" textAnchor="middle" fill="#7c3aed" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
+      <text x="90" y="103" textAnchor="middle" fill="#7c3aed" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
         LAYER
       </text>
-      <text x="90" y="84" textAnchor="middle" fill={muted} fontSize="10.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
+      <text x="90" y="137" textAnchor="middle" fill={muted} fontSize="10.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
         <tspan x="90" dy="0">Golden datasets</tspan>
         <tspan x="90" dy="16">and LLM-as-judge</tspan>
         <tspan x="90" dy="16">scoring run on</tspan>
@@ -38,15 +38,15 @@ export default function FiveLayerArchitecture() {
         <tspan x="90" dy="16">just at launch.</tspan>
       </text>
 
-      {/* Side panel: Observability Layer */}
-      <rect x="535" y="10" width="150" height="300" rx="10" fill="none" stroke="#2dd4bf" strokeOpacity="0.4" strokeDasharray="5 5" />
-      <text x="610" y="34" textAnchor="middle" fill="#2dd4bf" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
+      {/* Side panel: Observability Layer — content vertically centered in the panel */}
+      <rect x="535" y="10" width="150" height="312" rx="10" fill="none" stroke="#2dd4bf" strokeOpacity="0.4" strokeDasharray="5 5" />
+      <text x="610" y="87" textAnchor="middle" fill="#2dd4bf" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
         OBSERVABILITY
       </text>
-      <text x="610" y="50" textAnchor="middle" fill="#2dd4bf" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
+      <text x="610" y="103" textAnchor="middle" fill="#2dd4bf" fontSize="11" fontWeight="700" letterSpacing="1.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
         &amp; OPS LAYER
       </text>
-      <text x="610" y="84" textAnchor="middle" fill={muted} fontSize="10.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
+      <text x="610" y="137" textAnchor="middle" fill={muted} fontSize="10.5" fontFamily="ui-sans-serif, system-ui, sans-serif">
         <tspan x="610" dy="0">End-to-end tracing</tspan>
         <tspan x="610" dy="16">of every model</tspan>
         <tspan x="610" dy="16">call, retrieval, and</tspan>
@@ -84,7 +84,7 @@ export default function FiveLayerArchitecture() {
       <line x1="350" y1="208" x2="350" y2="234" stroke={dim} strokeWidth="1.5" markerEnd="url(#fla-arrow)" />
 
       {/* Box 3 */}
-      <rect x="185" y="240" width="330" height="68" rx="10" fill={boxFill} stroke={boxStroke} />
+      <rect x="185" y="240" width="330" height="78" rx="10" fill={boxFill} stroke={boxStroke} />
       <circle cx="215" cy="266" r="12" fill="none" stroke="#ec4899" strokeWidth="1.5" />
       <text x="215" y="270" textAnchor="middle" fill="#ec4899" fontSize="12" fontWeight="700" fontFamily="ui-sans-serif, system-ui, sans-serif">3</text>
       <text x="238" y="270" fill={title} fontSize="13" fontWeight="700" fontFamily="ui-sans-serif, system-ui, sans-serif">Model Layer</text>

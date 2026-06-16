@@ -12,8 +12,9 @@ export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const meta = articles.find((a) => a.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const meta = articles.find((a) => a.slug === slug);
   if (!meta) return {};
   return {
     title: `${meta.title} — ${profile.name}`,
@@ -21,15 +22,16 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function ArticlePage({ params }) {
-  const meta = articles.find((a) => a.slug === params.slug);
-  const content = articleContent[params.slug];
+export default async function ArticlePage({ params }) {
+  const { slug } = await params;
+  const meta = articles.find((a) => a.slug === slug);
+  const content = articleContent[slug];
 
   if (!meta || !content) {
     notFound();
   }
 
-  const otherArticles = articles.filter((a) => a.slug !== params.slug);
+  const otherArticles = articles.filter((a) => a.slug !== slug);
 
   return (
     <main>

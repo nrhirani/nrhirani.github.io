@@ -117,7 +117,7 @@ export default function ArticleBody({ sections }) {
 
         if (s.table) {
           return (
-            <div key={i} className="overflow-x-auto rounded-lg border border-white/10">
+            <div key={i} className="overflow-x-auto rounded-lg border border-white/10" tabIndex={0} role="region" aria-label="Scrollable table">
               <table className="w-full text-sm text-left">
                 <thead>
                   <tr className="border-b border-white/10 bg-bg-card">
